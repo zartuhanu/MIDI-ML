@@ -56,7 +56,7 @@ def process_file(fp, root_dir):
 
 def main():
     p = argparse.ArgumentParser(description="Extract bass lines from MIDI files")
-    p.add_argument("src_dir", nargs="?", default="lmd_clean_valid",
+    p.add_argument("src_dir", nargs="?", default="lmd_clean",
                    help="Directory containing MIDI files")
     p.add_argument("--out", default="basslines.json",
                    help="Output JSON file")
