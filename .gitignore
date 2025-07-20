@@ -4,3 +4,5 @@ lmd_clean/
 *.log
 .DS_Store
 lmd_clean_valid/
+lmd_deduplicated/
+output_basslines/
