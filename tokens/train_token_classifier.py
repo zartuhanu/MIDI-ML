@@ -28,7 +28,7 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 EXCLUDE_NEUTRAL = True          # <- recommended: drop neutral (usually near-empty after cleaning)
 MAX_LEN    = 1024
 BATCH_SIZE = 32
-EPOCHS     = 20                 # run longer now that we use full data
+EPOCHS     = 10                 # run longer now that we use full data
 LR         = 1e-3               # <- Option A: lower LR
 D_MODEL    = 256
 DROP       = 0.1
