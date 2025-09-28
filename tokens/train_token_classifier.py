@@ -21,13 +21,13 @@ CLEANED_LABELS_CSV = DATA_DIR / "labels_humans_cleaned_v1.csv"
 
 SPLITS_JSON = DATA_DIR / "splits.json"   # original frozen splits
 
-OUT_DIR     = Path("artifacts_token_clf_fast")
+OUT_DIR     = Path("artifacts_token_clf_lenghtier")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # ====== training config ======
 EXCLUDE_NEUTRAL = True          # <- recommended: drop neutral (usually near-empty after cleaning)
-MAX_LEN    = 512
-BATCH_SIZE = 64
+MAX_LEN    = 1024
+BATCH_SIZE = 32
 EPOCHS     = 20                 # run longer now that we use full data
 LR         = 1e-3               # <- Option A: lower LR
 D_MODEL    = 256
